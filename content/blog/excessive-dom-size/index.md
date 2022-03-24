@@ -14,7 +14,8 @@ Photo by [Sai Kiran Anagani
 <br>
 
 ## **為何會 DOM 過大**
-這次在優化我們 Google Lighthouse 的分數時發現，由於我們支援多國語系以及多國幣別，因此需要在 `<ul>` element 下包很多 `<li>` element 來組成清單，而當需要顯示很多資料加上這種多層的結構，就導致我們出現 Excessive DOM size 的錯誤。其他常見可能導致出現 Excessive DOM size 錯誤的還包括大型顯示資料的 `<table>` 結構。
+這次在優化我們 Google Lighthouse 的分數時發現，由於我們支援多國語系以及多國幣別，因此需要在 `<ul>` element 下包很多 `<li>` element 來組成清單，而當需要顯示很多資料加上這種多層的結構，就導致我們出現 Excessive DOM size 的錯誤，如下圖。其他常見可能導致出現 Excessive DOM size 錯誤的還包括大型顯示資料的 `<table>` 結構。
+![list.jpg](./list.png)
 
 <br>
 
@@ -24,6 +25,9 @@ Photo by [Sai Kiran Anagani
 - body 元素少於 800 個 node 為 success
 - body 元素超過 800 個 node 為 warning
 - body 元素超過 1400 個 node 為 error
+
+可以看到 Lighthouse 檢測出來的結果，DOM size 達到 1600，並且影響最大的 DOM 就是幣別的選單。
+![lighthouse.jpg](./lighthouse.png)
 
 <br>
 
@@ -51,6 +55,15 @@ Photo by [Sai Kiran Anagani
 ### 3. 簡化 CSS Selector
 
 當我們無法避免巨大的 DOM，又會透過 Javascript 來對 DOM 進行操作時，我們應該避免使用會選取大量 DOM 的 css selector  來操作，否則會消耗大量的記憶體。可以透過降低 css selector 的複雜性的方法，例如 BEM，優化效能。
+
+<br>
+
+## 結果
+在我們專案中，使用者登入之後會看到自己選擇的國家以及幣別，因此經過考量後決定使用 lazy loading 的方式。在使用者一開始進入頁面時畫面上只保留一個項目顯示在畫面上，當使用者想要切換到別的國家或是幣別，我們才透過在 `select` element 上的 `foucs` 事件來執行 callback function，載入其他的清單選項。可以看到調整後我們成功將一開始的 DOM size 減少 40% 以上。
+
+![list_after.jpg](./list_after.png)
+
+![lighthouse_after.jpg](./lighthouse_after.png)
 
 <br>
 
