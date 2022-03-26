@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `OTree's Blog`,
+    title: `OTree Frontend Blog`,
     author: {
       name: `Kevin Wang`,
       summary: `an front-end develop who is full of curiosity & inventive.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    description: `Otree frontend blog with articles of web performance optimization & modern website technology by an frontend developer. OTree 前端部落格，一位前端工程師的研究部落格，主要為紀錄網頁載入效能優化以及網頁相關技術及知識的筆記文章。`,
     siteUrl: `https://o-tree.net/`,
     social: {
       linkedIn: 'https://www.linkedin.com/in/yu-hsiang-wang',
