@@ -32,27 +32,27 @@ Photo by [Sai Kiran Anagani
 <br>
 
 ## **DOM 過大的影響**
-### 1. 網路資源及加載效能：
+### 網路資源及加載效能：
 過大的 DOM tree 通常會導致html file 跟著變大，導致需要下載的資源及時間增加，以及消耗更多的加載效能。
 
-### 2.畫面渲染效能：
+### 畫面渲染效能：
 太大的 DOM 在渲染到畫面上的位置及樣式時，也會需要更多的計算，從而導致渲染效能下降。
 
-### 3.記憶體消耗：
+### 記憶體消耗：
 當我們想透過 Javascript 與 DOM 上的節點進行互動時，越多的 DOM 會需要使用到越多的記憶體，可能導致使用者的 UX 下降。
 
 <br>
 
 ## 優化方法
-### 1. lazy loading (延遲載入)
+### lazy loading (延遲載入)
 
 如果是一開始不需要被使用者看見的 DOM，此時如果我們還去加載的話，就會導致效能的浪費。因此可以透過找出使用者在看到相關的 DOM 之前需要的行為，在使用者作出對應的行為我們再去延遲載入元件，來優化效能。
 
-### 2. Virtual DOM (虛擬DOM)
+### Virtual DOM (虛擬DOM)
 
 [**Virtual DOM**](https://zh-hant.reactjs.org/docs/faq-internals.html) 是透過物件來模擬 DOM 產生的樹狀結構。優點是透過操作這些 Virtual DOM 物件之後，再將這些改動更新到真實的 DOM 上，以期提升效能。因此目前也有一些第三方套件是透過這樣的概念，來解決過大的 DOM 顯示畫面上造成的效能問題，例如 React 生態的 [**react-virtual**](https://www.npmjs.com/package/react-virtual) 以及 Vue 生態的 [**vue-virtual-scroller**](https://www.npmjs.com/package/vue-virtual-scroller)。
 
-### 3. 簡化 CSS Selector
+### 簡化 CSS Selector
 
 當我們無法避免巨大的 DOM，又會透過 Javascript 來對 DOM 進行操作時，我們應該避免使用會選取大量 DOM 的 css selector  來操作，否則會消耗大量的記憶體。可以透過降低 css selector 的複雜性的方法，例如 BEM，優化效能。
 
