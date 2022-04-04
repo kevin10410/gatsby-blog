@@ -1,3 +1,5 @@
+import path from 'path'
+
 module.exports = {
   siteMetadata: {
     title: `OTree Frontend Blog`,
@@ -16,15 +18,15 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/blog`,
         name: `blog`,
+        path: path.resolve(`content/blog`),
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: path.resolve(`src/images`),
       },
     },
     {
