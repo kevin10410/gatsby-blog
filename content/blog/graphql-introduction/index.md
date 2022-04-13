@@ -4,7 +4,6 @@ date: "2022-03-28T23:00:00.000Z"
 description: "GraphQL 是一套開源的 API 標準，最早是由 Facebook 內部在 2012 年開始開發，直到 2015 年才公開發布。與 RESTful API 比起來，GraphQL 透過由 client 端所定義的資料結構，再由 server 端返回相同資料結構的對應資料，來避免 server 端回傳多餘資料，加快 client 端獲取資料的速度，因此以高彈性以及高效能所著名。最近終於有機會使用到 GraphQL，也藉此機會來重新好好認識 GraphQL。"
 ---
 ![jason-coudriet-eQux_nmDew0-unsplash.jpg](./index.jpg)
-
 Photo by [Jason Coudriet
 ](https://unsplash.com/@jcoudriet) on [Unsplash](https://unsplash.com/photos/eQux_nmDew0)
 

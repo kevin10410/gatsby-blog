@@ -4,7 +4,6 @@ date: "2022-03-23T21:30:00.000Z"
 description: "隨著前端逐漸開始重視使用者體驗，網頁的效能也越來越受到強調，也有越來越多的人在討論最網頁載入效能優化（Web Performance Optimization）。而大部分都會圍繞在透過減少 bundle size，來減少載入時間。而整個網頁，從使用者進入到渲染出整個頁面，其實其中有很多步驟都是會影響網頁效能，像 DOM 過大（Excessive DOM size）就是其中一項。"
 ---
 ![sai-kiran-anagani-5Ntkpxqt54Y-unsplash.jpg](./index.jpg)
-
 Photo by [Sai Kiran Anagani
 ](https://unsplash.com/@anagani_saikiran) on [Unsplash](https://unsplash.com/photos/5Ntkpxqt54Y)
 
