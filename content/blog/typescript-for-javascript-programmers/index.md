@@ -191,5 +191,5 @@ printId("202");
 最後，如果文章中有任何問題或是錯誤的部分，可以透過 [LinkedIn](https://www.linkedin.com/in/yu-hsiang-wang/) 私訊告訴我，我會盡快回覆及修正，非常感謝！
     
 ### Refs:
-- [https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html#structural-type-system](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html#structural-type-system)
+- [https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html)
 - [https://willh.gitbook.io/typescript-tutorial/](https://willh.gitbook.io/typescript-tutorial/)
