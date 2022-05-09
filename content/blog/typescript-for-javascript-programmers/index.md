@@ -1,5 +1,5 @@
 ---
-title: Typescript - Typescript for JS programmers
+title: Typescript - TS for JS programmers
 date: "2022-04-13T21:00:00.000Z"
 description: "Javascript 是一門動態型別語言 (Dynamically typed)，同時也是一門弱型別語言 (Weakly typed)，因此我們不僅可以在程式撰寫時不用明確的型別宣告，也可以在 runtime 的過程中任意透過顯性或隱性的方法來更換變數的型別，雖然這樣特性讓 Javascript 在開發上變得更加簡單，也更靈活多變，但也因此更加容易遇到沒有預期的錯誤。Typescript 是基於 Javascript 而開發出來的一門開源程式語言，也就是 Javascript 的超集 (Superset)，透過靜態型別檢查，來幫助我們能在開發編譯的過程中，就幫助我們找出這些可能造成錯誤的地方。"
 ---

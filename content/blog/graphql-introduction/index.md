@@ -63,7 +63,7 @@ GraphQL 是一種 API 的查詢語言，也是一套新的 API 標準。核心�
 ### 提升產品快速迭代的開發效率
 一般 RESTful API 的結構與路徑，通常與 client 端的 view 相關，也因此 view 更動時，API 結構或是路徑可能就會需要一起更動，造成開發上的延遲。但是透過 GraphQL，client 端只需要更改請求的資料結構，就能滿足 view 上的變動，不僅提供了開發時的彈性，也提高了網頁開發的效率。
     
-## 總結    
+### 總結    
 雖然 RESTful API 能滿足很多 website application 的需求，但隨著攜帶式裝置的普及，以及網頁開發的快速迭代，GraphQL  可以幫助我們解決更多 RESTful API 的瓶頸。在之後的文章中也會繼續介紹 GraphQL 的用法，希望大家有機會都可以試試 GraphQL 帶來的高彈性與快速開發的好處。
     
 最後，如果文章中有任何問題或是錯誤的部分，可以透過 [LinkedIn](https://www.linkedin.com/in/yu-hsiang-wang/) 私訊告訴我，我會盡快回覆及修正，非常感謝！
