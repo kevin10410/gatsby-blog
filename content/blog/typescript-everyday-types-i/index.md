@@ -4,8 +4,7 @@ date: "2022-05-09T21:00:00.000Z"
 description: "在上一篇文章中，我們簡單介紹了一下 Typescript 與 Javascript 的關聯，以及對 Javascript 開發者來說，剛使用 Typescript 需要知道的概念。而在接下來的文章中，我們會根據 Typescript Document 中的 Everyday Types ，先來介紹 Typescript 常見的型別，藉由認識基本以及常見的型別，來幫助我們能在面對複雜的情境時，使用合適的型別。"
 ---
 ![dose-juice-2QA1vKJbbG0-unsplash.jpg](./index.jpg)
-Photo by [Dose Juice
-](https://unsplash.com/@dosejuice) on [Unsplash](https://unsplash.com/photos/2QA1vKJbbG0)
+Photo by [Dose Juice](https://unsplash.com/@dosejuice) on [Unsplash](https://unsplash.com/photos/2QA1vKJbbG0)
 
 在上一篇文章中，我們簡單介紹了一下 Typescript 與 Javascript 的關聯，以及對 Javascript 開發者來說，剛使用 Typescript 需要知道的概念。而在接下來的文章中，我們會根據 Typescript Document 中的 [Everyday Types](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html)，先來介紹 Typescript 常見的型別，藉由認識基本以及常見的型別，來幫助我們能在面對複雜的情境時，使用合適的型別。
 
@@ -167,6 +166,8 @@ function printUser(user: { name: string; age: number, country?: string }) {
 ### 總結
 
 在這篇文章中，我們介紹了幾個在 Typescript 中，我們會經常碰到的型別與用法。透過認識這些型別以及用法，可以逐步的了解 Typescript 可以如何幫助我們，避開在 Javascript 中我們經常會碰到的型別轉換所造成的問題。
+
+最後，如果文章中有任何問題或是錯誤的部分，可以透過 [LinkedIn](https://www.linkedin.com/in/yu-hsiang-wang/) 私訊告訴我，我會盡快回覆及修正，非常感謝！
 
 ### Refs:
 - [https://www.typescriptlang.org/docs/handbook/2/everyday-types.html](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html)
